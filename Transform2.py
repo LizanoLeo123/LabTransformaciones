@@ -14,13 +14,14 @@ try:
     xAxisEnd = int(input())
     print("Enter the end Y axis value: ")
     yAxisEnd = int(input())
+    # Image cropped
+    # imgCropped = img[0:200, 0:500] this was for testing / comparing
+    imgCropped2 = img[yAxisBegin:yAxisEnd, xAxisBegin:xAxisEnd]
+
+    # cv2.imshow("Cropped", imgCropped)
+    cv2.imshow("Cropped with measurements", imgCropped2)
+    cv2.waitKey(0)
 except:
-    print("Please enter a valid number")
-
-# Image cropped
-# imgCropped = img[0:200, 0:500] this was for testing / comparing
-imgCropped2 = img[yAxisBegin:yAxisEnd, xAxisBegin:xAxisEnd]
-
-# cv2.imshow("Cropped", imgCropped)
-cv2.imshow("Cropped with measurements", imgCropped2)
-cv2.waitKey(0)
+    print("Please enter a valid number, "
+          "be sure to not enter a value out of"
+          " the heigth or width of the image")
