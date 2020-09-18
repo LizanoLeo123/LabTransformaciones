@@ -18,3 +18,5 @@ b,g,r = (img[xAxis, yAxis])
 print ("Red:" + str(r))
 print ("Green:" + str(g))
 print ("Blue:" + str(b))
+
+# End of the code
