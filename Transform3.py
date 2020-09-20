@@ -11,13 +11,14 @@ from main import img
 
 # Clean resize without afecting the ascpect ratio
 print("Put a new dimension of the width to resize the image: ")
-r = 0
+
 try:
-    r = int(input()) # Resize measure
-    dim = (r, int(h * (r / w)))
-    resized = cv2.resize(img, dim)
+    w = int(input()) # Width resize measure
+    print("Put a new dimension of the height to resize the image: ")
+    h = int(input()) # Height resize measure 
+    resized = cv2.resize(img, (w, h))
     cv2.imshow("Original", img)
-    cv2.imshow("Aspect Ratio Resize", resized)
+    cv2.imshow("Fixed Resize", resized)
     cv2.waitKey(0)
 except:
     print("Please enter a valid number")

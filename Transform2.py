@@ -1,7 +1,10 @@
 import cv2
 
+#Import the selected image
+from main import img
+
 # Default image
-img = cv2.imread("Resources/FotosMangoReducidas/IMG_0359.jpg")
+#img = cv2.imread("Resources/FotosMangoReducidas/IMG_0359.jpg")
 
 # Coordenates
 xAxisBegin, yAxisBegin, xAxisEnd, yAxisEnd = 0, 0, 0, 0
