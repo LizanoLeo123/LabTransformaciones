@@ -55,7 +55,7 @@ Se aplica un kernel Gaussiano a la imagen que le aplicara un nivel de blur a la 
 
 Autores: Danilo Chaves y  Leonardo Lizano
 
-Infografía sobre las técnicas usadas: https://www.canva.com/design/DAEIWPTGF1I/ikIcjWrSD8VNfobHR_DKYg/view?utm_content=DAEIWPTGF1I&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+Infografía sobre las técnicas usadas: https://drive.google.com/file/d/1ntc9QJwBJxJe8S98ZvH7AhvSwk80Lk6n/view?usp=sharing
 
 ---
 ## Referencias
