@@ -9,12 +9,14 @@ Al iniciar el programa se le muestra al usuario la lista de transformaciones dis
 ## Transform 1
 
 La primera transformación consiste en cargar la iamgen, y extraer la información de los valores RGB de un pixel (x, y) brindado por el usuario
+
 Se utiliza la sintaxis b, g, r = (img[x, y]), por de esta forma se extrae el vector de valores de color, del pixel (x, y), ya que se lee la imagen como si fuera una matriz de pixeles 
 
 ---
 ## Transform 2
 
 La segunda transformación usa un par de coordenadas de inicio (x1,y1) y finales (x2,y2) para mostrar una región recortada de la imagen original
+
 Se le solicita al usuario los valores (x, y) del par ordenado de inicio y de fin del recorte y se usa la sintaxis
 imagenRecortada = imagenOrigen[yInicio:yfin , xInicio:xFin]
 Que significa que toma de la imagen original desde el y de inicio hasta el y final, y desde el x de inicio hasta el x final.
@@ -24,6 +26,7 @@ La operacion se puede invalidar si se ingresa un valor negativo o fuera de las p
 ## Transform 3
 
 Esta transformación consiste en cambiar el tamaño de la imagen
+
 Se le solicita al usuario las nuevas medidas en pixeles que tendrá la imagen; esta operación no toma en cuenta el ratio de aspecto de la imagen original.
 
 ---
@@ -37,12 +40,14 @@ Se hace un resize en base a la imagen original y las dimensiones nuevas y se mue
 ---
 ## Transform 5
 Este transform permite rotar la imagen un número dado de grados
+
 La imagen se girara una cantidad de grados determinada por el usuario; si se ingresan grados negativos la imagen se rotará en sentido de reloj, caso contrario si los grados son positivos.  
 
 ---
 ## Transform 6
 
 Suavizar la imagen con filtro Gaussiano
+
 Se aplica un kernel Gaussiano a la imagen que le aplicara un nivel de blur a la imagen. El nivel de suavizado debe ser impar y a mayor el nivel especificado el efecto será más pronunciado. El nivel de suavizado debe ser impar debido a que el algoritmo realiza la operación utilizando matrices y genera un valor en el centro de la matriz y ese centro debe ser un pixel, cosa que no ocurre cuando la matriz tiene dimensiones pares
 
 ---
