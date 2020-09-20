@@ -1,6 +1,9 @@
 import cv2
 
-img = cv2.imread("Resources/FotosMangoReducidas/IMG_0359.jpg", cv2.IMREAD_UNCHANGED)
+#Import the selected image
+from main import img
+
+#img = cv2.imread("Resources/FotosMangoReducidas/IMG_0359.jpg", cv2.IMREAD_UNCHANGED)
 
 # Ask for x and y pixels
 xAxis = 0
